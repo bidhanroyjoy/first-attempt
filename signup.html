@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<hrad>
+		<title>SIGNUP</title>
+		<link rel="shortcut icon" href="lg.png">
+		<link rel="stylesheet" type="text/css" href="root.css">
+	<style>
+		body{
+			background-repeat: no-repeat;
+			background-position: center;
+  
+			background-attachment: fixed;
+			}
+		.rgister1{
+			width: 500px;
+			
+			text-align: center;
+			margin: 0 auto;
+			background-color: rgba(140, 177, 217,0.4);
+			margin-top: 150px;
+			border-radius: 4px;
+			}
+		.rgister1 img{
+			width: 150px;
+			height: 150px;
+			margin-top: -60px;
+			margin-bottom: 30px;
+			}
+		input[type="text"],input[type="password"],input[type="date"],input[type="email"],input[type="tel"]{
+			width: 300px;
+			height: 45px;
+			border-radius:4px;
+			font-size: 18px;
+			margin-bottom: 20px;
+			background-color: rgba(179, 179, 179,0.4);
+			padding-left: 30px;
+			}
+		
+		.login{
+			
+			padding:15px 25px;
+			cursor:pointer;
+			color:rgb(228, 231, 231);
+			background-color: rgb(115, 96, 38);
+			border-radius:4px;
+			border:none;
+			border-bottom: 4px solid #665200;
+			
+			}
+		p{
+			font-family:Times New Roman;
+			font-size:30px;
+			color:grey;
+		}
+		input[type="submit"]:hover,input[type="reset"]:hover{
+			background-color: grey;
+			}
+		
+	</style>
+	<script>
+		function user()
+		{
+		if(document.frm.firstname.value=="")
+		{
+		alert("PLEASE ENTER FIRSTNAME");
+		document.frm.firstname.focus();
+		return false;
+		}
+		else if(document.frm.lastname.value=="")
+		{
+		alert("PLEASE ENTER LAST NAME");
+		document.frm.lastname.focus();
+		return false;
+		}
+		else if(document.frm.gendar.value=="")
+		{
+		alert("PLEASE SELECT YOUR GENDER");
+		document.frm.gendar.focus();
+		return false;
+		}
+		else if(document.frm.bdate.value=="")
+		{
+		alert("PLEASE ENTER YOUR BIRTHDATE");
+		document.frm.bdate.focus();
+		return false;
+		}
+		else if(document.frm.email.value=="")
+		{
+		alert("PLEASE ENTER YOUR E-MAIL");
+		document.frm.email.focus();
+		return false;
+		}
+		else if(document.frm.tel.value=="")
+		{
+		alert("PLEASE ENTER YOUR PHONE NUMBER");
+		document.frm.tel.focus();
+		return false;
+		}
+		else if(document.frm.EDU.value=="")
+		{
+		alert("PLEASE SELECT YOUR QUALIFICATION");
+		document.frm.EDU.focus();
+		return false;
+		}
+		else if(document.frm.Country.value=="-1")
+		{
+		alert("PLEASE SELECT YOUR COUNTRY");
+		document.frm.Country.focus();
+		return false;
+		}
+		else if(document.frm.password.value=="")
+		{
+		alert("PLEASE ENTER YOUR PASSWORD");
+		document.frm.password.focus();
+		return false;
+		}
+		
+		
+		else
+		{
+		alert("SUCCESSFULLY LOGEED IN");
+		return true;
+		}
+		}
+		
+		function erase()
+		{
+		alret("ARE YOU WANT TO SURE RESET");
+		}
+		
+		
+		
+	
+	</script>
+</head>
+<body background="background_black_white_wooden_surface_board_18564_1920x1080.jpg">
+		<ul>
+		
+		<li><a class="active" href="coverpage.html"><img height="20px" width="20px" class="ico" src="home.png">Home</a></li>
+		<li><a href="news.html">News</a></li>
+		<li class="dropdown"><a href="institution.html" class="dropbtn">Institution</a>
+		
+		<div class="dropdown-content">
+			<a href="usa.html">USA</a>
+			<a href="canada.html">CANADA</a>
+			<a href="AUSTRALIA.html">AUSTRALIA</a>
+			<a href="uk.html">UK</a>
+			<a href="china.html">CHINA</a>
+			<a href="germany.html">GERMANY</a>
+			<a href="france.html">FRANCE</a>
+			<a href="newzealand.html">NEWZEALAND</a>
+			<a href="japan.html">JAPAN</a>
+			<a href="netherland.html">NETHERLAND</a>
+			<a href="brazil.html">BRAZIL</a>
+			<a href="india.html">INDIA</a>
+		</div>
+		</li>
+		
+		<li><a href="contact.html">Contact</a></li>
+		<li class="dropdown"><a href="#" class="dropbtn">Login</a>
+		<div class="dropdown-content">
+			<a href="registration.html">Login</a>
+			<a href="signup.html">Signup</a>
+		</div>
+		</li>
+		<li ><a href="about.html">About</a></li>
+		
+	</ul>
+<!--logo container-->
+	<table id="table1">
+		<tr>
+			<td width="25%" ><img src="logofinal.png"></td>
+			<td id="td1" onmouseover="mouseover()" onmouseout="mouseout()" width="75%"><br>Global Edu Consultant<br><p class="p1">Come for consultance go for education</p></td>
+		</tr>
+	</table>
+	<div class="rgister1">
+		<img src="logofinal.png_256x256(1).png">
+		<form method="post" name="frm" onsubmit="return(user())">
+			<div class="rgister-input">
+				<input type="text" name="firstname"  placeholder="FIRST NAME" ><br>
+				<input type="text" name="lastname"  placeholder="LAST NAME" ><br>
+				<p>GENDER</p>
+				<input type="radio" name="gendar" value="MALE">MALE
+				<input type="radio" name="gendar" value="FEMALE">FEMALE
+				<input type="radio" name="gendar" value="OTHERS">OTHERS<br><br>
+				<p>DATE OF BIRTH</p>
+				<input type="date"/><br>
+				<input type="email" name="email"  placeholder="Ex:******@***.**" ><br>
+				<input type="tel" name="tel" placeholder="PHONE NUMBER">
+				<p>YOUR EDUCATIONAL QUALIFICATION(LAST)</p>
+				<input type="radio" name="EDU" value="10th class">10TH CLASS
+				<input type="radio" name="EDU" value="12th class">12TH CLASS
+				<input type="radio" name="EDU" value="bachelor">BACHELOR
+				<input type="radio" name="EDU" value="masters">MASTERS
+				<input type="radio" name="EDU" value="diploma">DIPLOMA<br><br>
+				
+				
+			</div>
+			<div>
+				<p>YOUR COUNTRY</p>
+				<select name="Country" style="width:330px;height:45px; border-radius:4px; font-size: 18px; margin-bottom: 20px;background-color: rgba(179, 179, 179,0.4);padding-left: 30px;">
+                     <option value="-1">[choose yours]</option>
+					 <option value="1">AFGHANISTHAN</option>
+					 <option value="2">ALGERIA</option>
+					 <option value="3">ANGOLA</option>
+					 <option value="4">ARGENTINA</option>
+					 <option value="5">AUSTRALIA</option>
+					 <option value="6">BAHRAIN</option>
+					 <option value="7">BANGLADESH</option>
+					 <option value="8">BERBODOS</option>
+					 <option value="9">BASQUE-COUNTRY</option>
+					 <option value="10">BELIZE</option>
+					 <option value="11">BERMUDA</option>
+					 <option value="12">BHUTHAN</option>
+					 <option value="13">BRAZIL</option>
+					 <option value="14">BRUNEI</option>
+					 <option value="15">BULGARIA</option>
+					 <option value="16">CAMEROON</option>
+					 <option value="17">CANADA</option>
+					 <option value="18">CHAD</option>
+					 <option value="19">CHILE</option>
+					 <option value="20">CHINA</option>
+					 <option value="21">COLOMBIA</option>
+					 <option value="21">COSTA-RICA</option>
+					 <option value="22">CUBA</option>
+					 <option value="23">CYPRUS</option>
+					 <option value="24">EGYPT</option>
+					 <option value="25">ENGLAND</option>
+					 <option value="26">EURIPEAN-UNION</option>
+					 <option value="27">FINLAND</option>
+					 <option value="28">FRANCE</option>
+					 <option value="29">GAMBIA</option>
+					 <option value="30">GREECE</option>
+					 <option value="31">HAWAII</option>
+					 <option value="32">HONG-KONG</option>
+					 <option value="33">HUNGRAY</option>
+					 <option value="34">ICELAND</option>
+					 <option value="35">INDIA</option>
+					 <option value="36">INDONESEA</option>
+					 <option value="37">IRAN</option>
+					 <option value="38">IRAK</option>
+					 <option value="39">JAPAN</option>
+					 <option value="40">JORDAN</option>
+					 <option value="41">LIBYA</option>
+					 <option value="42">MALAYSIA</option>
+					 <option value="43">NORWAY</option>
+					 <option value="44">OMAN</option>
+					 <option value="45">PAKISTHAN</option>
+					 <option value="46">PHILIPINES</option>
+					 <option value="47">PORTHUGAL</option>
+					 <option value="48">RUSSIA</option>
+					 <option value="49">SCOTLAND</option>
+					 <option value="50">SPAIN</option>
+					 <option value="51">SRI-LANKA</option>
+					 <option value="52">SYRIA</option>
+					 <option value="53">TAIWAN</option>
+					 <option value="54">THAILAND</option>
+					 <option value="55">UK</option>
+					 <option value="56">USA</option>
+					 <option value="57">VIETNAM</option>
+					 <option value="58">ZAMBIA</option>
+					 
+                </select>
+			</div>	
+			<div>
+				<p>COUNTRY YOU WANT TO STUDY</p>
+				<select name="Country" style="width:330px;height:45px;border-radius:4px;font-size: 18px;margin-bottom: 20px;background-color: rgba(179, 179, 179,0.4);padding-left: 30px;">
+                     <option value="-1">[choose yours]</option>
+                     <option value="1">USA</option>
+                     <option value="2">UK</option>
+                     <option value="4">CANADA</option>
+					 <option value="6">FRANCE</option">GERMAN</option>
+					 <option value="7">CHINA</option>
+					 <option value="8">BRAZIL</option>
+					 <option value="9">CYPRUS</option>
+					 <option value="10">AUSTRALIA</option>
+					 <option value="11">INDIA</option>
+					 <option value="12">RUSSIA</option>
+				</select>
+			</div>
+
+			<div class="rgister-input">
+				<input type="password" name="password" placeholder="PASSWORD">
+				<input type="password" name="retype" placeholder="RE-TYPE PASSWORD">
+			</div>
+			<input type="submit" name="submit" class="login" value="SUBMIT">
+			<input type="reset" name="reset" class="login" value="ERASE" onclick="erase()">
+			
+			
+		<form>
+	</div>
+	
+<!--End of the page-->
+	<div class="footer">
+		<center>
+			<p style="background-color:none;color:white;font-family:Cooper Std Black;font-size:150%;">Our Social Contact<br><br><br><a href="#"><img id="social" src="1478134873_facebook.png"></a><a href="#"><img id="social" src="1478134932_twitter_circle_color.png"></a><a href="#"><img id="social" src="1478134990_WhatsApp.png"></a><br></p>
+		</center>
+	</div>	
+</body>
+</html>

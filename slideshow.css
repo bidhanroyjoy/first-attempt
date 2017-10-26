@@ -1,0 +1,40 @@
+#container{
+		height:300px;
+		width:950px;
+		margin:20px auto;
+		position:relative;
+		border: 2px solid black;
+		}
+		
+		#img{
+		height:300px;
+		width:950px;
+		position:absolute;}
+		
+		#left_holder{
+		height:300px;
+		width:100px;
+		left:0px;
+		top:0px;
+		position:absolute;}
+		
+		#right_holder{
+		height:300px;
+		width:100px;
+		right:0px;
+		top:0px;
+		position:absolute;}
+		
+		.left{
+		height:50px;
+		width:50px;
+		position:absolute;
+		top:40%;
+		left:0px;}
+		
+		.right{
+		height:50px;
+		width:50px;
+		position:absolute;
+		top:40%;
+		right:0px;}
